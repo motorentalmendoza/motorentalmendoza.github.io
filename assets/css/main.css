@@ -152,7 +152,7 @@ input, select, textarea {
 		}
 
 	body {
-		background-color: #000000;
+		background-color: #35363A;
 		color: #ffffff;
 	}
 
@@ -2582,6 +2582,10 @@ input, select, textarea {
 			font-weight: 900;
 		}
 
+		.icon.light:before {
+			font-weight: 100;
+		}
+
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
@@ -3459,7 +3463,7 @@ input, select, textarea {
 	}
 
 		.banner.style1 .content {
-			padding: 7rem 7rem 5rem 7rem ;
+			padding: 5rem 5rem 5rem 5rem ;
 			-moz-align-self: center;
 			-webkit-align-self: center;
 			-ms-align-self: center;
@@ -8603,3 +8607,36 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+	/* Modal Styles */
+	.modal {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.5);
+		z-index: 1000;
+	}
+	
+	.modal-content {
+		background-color: #fff;
+		margin: 15% auto;
+		padding: 20px;
+		width: 70%;
+		max-width: 500px;
+		position: relative;
+		border-radius: 5px;
+	}
+	
+	.close {
+		position: absolute;
+		right: 20px;
+		top: 10px;
+		font-size: 28px;
+		cursor: pointer;
+	}
+	
+	.close:hover {
+		color: #666;
+	}
