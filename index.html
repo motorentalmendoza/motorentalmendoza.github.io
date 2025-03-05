@@ -17,17 +17,38 @@
 
 		<!-- Dropdown button -->
 			<div class="dropdown">
-				<a class="dropbtn"> 
+				<a class="dropbtn" onclick="myFunction()"> 
 					<i class="fa fa-solid fa-bars"></i>
 				</a>
-				<div class="dropdown-content">
+				<div class="dropdown-content" id="myDropdown">
 					<a href="#about-us" class="smooth-scroll-middle">Nosotros</a>
 					<a href="#contact" class="smooth-scroll-middle">Contacto</a>
 					<a href="#characteristics" class="smooth-scroll-middle">Motos</a>
 					<a href="#location" class="smooth-scroll-middle">Ubicación</a>
 					<a href="#advantages" class="smooth-scroll-middle">¿Por qué elegirnos?</a>
 				</div>
-				</div> 
+			</div>
+			<script>
+				/* When the user clicks on the button, 
+				toggle between hiding and showing the dropdown content */
+				function myFunction() {
+				  document.getElementById("myDropdown").classList.toggle("show");
+				}
+				
+				// Close the dropdown if the user clicks outside of it
+				window.onclick = function(event) {
+				  if (!event.target.matches('.dropbtn')) {
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+					  var openDropdown = dropdowns[i];
+					  if (openDropdown.classList.contains('show')) {
+						openDropdown.classList.remove('show');
+					  }
+					}
+				  }
+				}
+				</script>
 
 
 		<!-- Wrapper -->

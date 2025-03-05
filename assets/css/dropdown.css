@@ -37,7 +37,7 @@
   }
     
   .dropdown-content a {
-    font-weight: 900;
+      font-weight: 900;
       float: none;
       color: rgb(254, 254, 254);
       padding: 12px 16px;
@@ -49,10 +49,14 @@
   .dropdown-content a:hover {
       background-color: #6c6e6c;
   }
-  
-  .dropdown:hover .dropdown-content {
-      display: block;
+
+  .dropdown-content.show {
+    display: block;
   }
+  
+  /* .dropdown:hover .dropdown-content {
+      display: block;
+  } */
 
   @media (max-width: 768px) {
     .dropdown {
