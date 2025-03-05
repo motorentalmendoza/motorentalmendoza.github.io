@@ -21,7 +21,11 @@
 
 		<script type="text/javascript">
 		function googleTranslateElementInit() {
-			new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
+			new google.translate.TranslateElement({
+				pageLanguage: 'es',
+				includedLanguages: 'en,es,fr,de', // Add your desired languages here
+        		layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+			}, 'google_translate_element');
 		}
 		</script>
 
