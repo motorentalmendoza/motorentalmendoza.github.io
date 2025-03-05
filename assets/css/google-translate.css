@@ -1,0 +1,86 @@
+/* Position and style the translate element */
+#google_translate_element {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 9999 !important;
+    margin: 10px !important;
+    padding: 5px 5px !important;
+    background: #FFA147 !important;
+    border-radius: 4px !important;
+}
+
+/* White text for all elements in the translate widget */
+#google_translate_element * {
+    color: rgb(0, 0, 0) !important;
+}
+
+/* Dropdown button styling */
+.goog-te-combo {
+    background: rgb(255, 252, 252) !important;
+    border: 1px solid #333 !important;
+    padding: 0px 0px 0px 10px !important;
+    border-radius: 3px !important;
+    margin: 0 !important;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 30px;
+    width: 200px;
+}
+
+/* Dropdown options container */
+.goog-te-menu2 {
+    background: black !important;
+    border: 1px solid #444 !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3) !important;
+    min-width: 150px !important;
+}
+
+/* Individual dropdown items */
+.goog-te-menu2-item,
+.goog-te-menu2-item-selected {
+    background: black !important;
+    border-bottom: 1px solid #333 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Dropdown item text */
+.goog-te-menu2-item div,
+.goog-te-menu2-item-selected div {
+    color: white !important;
+    padding: 8px 12px !important;
+    background: transparent !important;
+}
+
+/* Hover states */
+.goog-te-menu2-item:hover div {
+    background: #333 !important;
+}
+
+/* Selected item state */
+.goog-te-menu2-item-selected div {
+    background: #222 !important;
+}
+
+/* Dropdown scrollbar */
+.goog-te-menu2::-webkit-scrollbar {
+    width: 8px;
+    background: #1a1a1a;
+}
+
+.goog-te-menu2::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+/* Hide original text "Select Language" */
+.goog-te-menu-value span {
+    display: none !important;
+}
+
+/* Fix dropdown arrow color */
+.goog-te-menu-value span[style*='font-family: Material Icons'] {
+    color: white !important;
+    margin-left: 4px !important;
+}
