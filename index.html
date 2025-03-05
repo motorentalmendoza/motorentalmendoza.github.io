@@ -10,9 +10,25 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/dropdown.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+
+		<!-- Dropdown button -->
+			<div class="dropdown">
+				<a class="dropbtn"> 
+					<i class="fa fa-solid fa-bars"></i>
+				</a>
+				<div class="dropdown-content">
+					<a href="#about-us" class="smooth-scroll-middle">Nosotros</a>
+					<a href="#contact" class="smooth-scroll-middle">Contacto</a>
+					<a href="#characteristics" class="smooth-scroll-middle">Motos</a>
+					<a href="#location" class="smooth-scroll-middle">Ubicación</a>
+					<a href="#advantages" class="smooth-scroll-middle">¿Por qué elegirnos?</a>
+				</div>
+				</div> 
+
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
@@ -21,7 +37,7 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<div style="text-align: center;">
-								<img src="images/logo.jpg" alt="Moto Rental Mendoza"  
+								<img src="images/logo_transparent.png" alt="Moto Rental Mendoza"  
 									style="display: block; margin: auto; 
 									max-width: 500px; 
 									width: 100%; 
@@ -31,16 +47,18 @@
 								<!-- <h1>Moto Rental Mendoza</h1> -->
 								<p class="major">Conquistá Mendoza: dos ruedas, mil caminos.</p>
 							</div>
-							<ul class="actions stacked">
-								<li>
-									<a href="#about-us" class="button big wide smooth-scroll-middle">Conocenos</a>
-									<a href="#contact" class="button big wide smooth-scroll-middle">Contactate con nosotros</a>
-								</li>
-							</ul>
+							<div style="text-align: center;">
+								<ul class="actions stacked">
+									<li>
+										<a href="#about-us" class="button big wide smooth-scroll-middle">Conocenos</a>
+										<a href="#contact" class="button big wide smooth-scroll-middle">Contactate con nosotros</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-						<div class="image">
+						<!-- <div class="image">
 							<img src="images/banner.jpg" alt="" />
-						</div>
+						</div> -->
 					</section>
 
 				<!-- Two -->
@@ -50,7 +68,7 @@
 							<p style="text-align: justify;"><strong>Somos Moto Rental Mendoza, una familia mendocina apasionada por las rutas, los paisajes y la adrenalina de dos ruedas.</strong>
 							<br/>
 							Nacimos para que vivas Mendoza como nosotros lo hacemos: <strong>sin atajos ni límites</strong>. Con nuestras motocicletas y tours guiados, te llevamos a descubrir <strong> los viñedos más escondidos hasta las curvas más desafiantes de la montaña</strong>, porque creemos que esta tierra se siente mejor con el viento en el rostro y el motor encendido.</p>
-							<p style="text-align: justify;">¿Por qué elegirnos?
+							<p style="text-align: left;">¿Por qué elegirnos?
 								<br/>
 								&emsp;✅ <strong>Una misión simple</strong>: darte las llaves para que Mendoza se vuelva tu aventura.
 								<br/>
@@ -91,12 +109,12 @@
 
 				<!-- Four -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="characteristics">
-						<div class="content">
+						<div class="content" style="text-align: left;">
 							<h2>Nuestras motos</h2>
 							<ul>
-								<li>Maxi Scooter automática Honda PCX 150</li>
+								<li>Maxi Scooter automática Honda PCX 150 cc.</li>
 								<li>Incluye: una cadena, dos cascos de seguridad, guantes, baúl trasero y porta celular/GPS.</li>
-								<li>Seguro básico</li>
+								<li>Seguro básico.</li>
 							</ul>
 						</div>
 						<div class="image">
