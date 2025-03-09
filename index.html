@@ -81,7 +81,7 @@
 				<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="about-us">
 						<div class="content">
-							<h2>¿Quienes somos?</h2>
+							<h2>¿Quiénes somos?</h2>
 							<p style="text-align: justify;"><strong>Somos Moto Rental Mendoza, una familia mendocina apasionada por las rutas, los paisajes y la adrenalina de dos ruedas.</strong>
 							<br/>
 							Nacimos para que vivas Mendoza como nosotros lo hacemos: <strong>sin atajos ni límites</strong>. Con nuestras motocicletas y tours guiados, te llevamos a descubrir <strong> los viñedos más escondidos hasta las curvas más desafiantes de la montaña</strong>, porque creemos que esta tierra se siente mejor con el viento en el rostro y el motor encendido.</p>
@@ -323,6 +323,7 @@
 							<h2>Escribinos</h2>
 							<form method="post" action="https://api.web3forms.com/submit">
 								<div class="fields">
+									<input type="hidden" name="redirect" value="https://motorentalmendoza.com/success.html">
 									<input type="hidden" name="access_key" value="56775632-533f-4ce9-8744-b5459cac34bf">
 									<div class="field half">
 										<label for="name">Nombre</label>
@@ -336,13 +337,25 @@
 										<label for="message">Mensaje</label>
 										<textarea placeholder="Hola! Quisiera más información para poder reservar." name="message" id="message" rows="6" required></textarea>
 									</div>
+									<input type="hidden" name="subject" value="">
 								</div>
 								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+									<li><input type="submit" name="submit" id="submit" value="Enviar mensaje" /></li>
 								</ul>
 							</form>
 						</div>
 					</section>
+					<script>
+						document.addEventListener("DOMContentLoaded", function () {
+							const nameInput = document.getElementById("name");
+							const subjectInput = document.querySelector("input[name='subject']");
+						
+							nameInput.addEventListener("input", function () {
+								subjectInput.value = `${nameInput.value} ha enviado un mensaje a través de la página web!`;
+							});
+						});
+					</script>
+						
 
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
